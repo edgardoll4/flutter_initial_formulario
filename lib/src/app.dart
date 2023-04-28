@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_initial_formulario/src/screens/home_page.dart';
 import 'package:flutter_initial_formulario/src/screens/login_page.dart';
 import 'package:flutter_initial_formulario/src/screens/register_page.dart';
 
@@ -19,6 +20,23 @@ class MyApp extends StatelessWidget {
         // ),
         body: RegisterPage(),
       ),
+      // initialRoute: '/',
+
+      // onGenerateRoute: (RouteSettings settings) {
+      //   return MaterialPageRoute(
+      //     builder: (BuildContext context) {
+      //       switch (settings.name) {
+      //         case '/':
+      //           return const LoginPage();
+      //         case '/home':
+      //           // dynamic userLoggged = settings.arguments;
+      //           return const HomePage();
+      //         case '/register':
+      //           return const RegisterPage();
+      //       }
+      //     },
+      //   );
+      // },
     );
   }
 }
@@ -31,7 +49,7 @@ class testGestureDetector extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      child: Text('Hello World'),
+      child: const Text('Hello World'),
       onTap: () {
         print('onTap');
       },
